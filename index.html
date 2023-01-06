@@ -63,13 +63,12 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-
-          <button data-modal-open>OPEN</button>
-          <div class="modal is-hidden" data-modal>
-            <button data-modal-close>close</button>
+          <div>
+            <button class="button-order" type="button" data-modal-open>Zamów usługe</button>
           </div>
-
-          <button class="button-order data-modal-open" type="button">Zamów usługe</button>
+          <div class="modal is-hidden" data-modal>
+            <button data-modal-close>x</button>
+          </div>
         </div>
       </section>
 
@@ -424,9 +423,9 @@
 
     <!--Stopka-->
     <footer>
-      <!--DIV CONTAINER I TWORZĄCY FLEXBOX W STOPCE-->
+      <!--początek div tworzący container i flexbox w stopce-->
       <div class="container footer-wrap">
-        <!--DIV Z LOGO I KONTAKTEM-->
+        <!--początek div "logo i kontakt"-->
         <div>
           <a href="index.html" class="logo"
             ><span class="logo-web">Web</span><span class="logo-studio-footer">Studio</span></a
@@ -452,8 +451,8 @@
             </ul>
           </address>
         </div>
-        <!--KONIEC DIV Z LOGO I KONTAKTEM-->
-        <!--DIV DOŁĄCZ DO NAS-->
+        <!--koniec div "logo i kontakt"-->
+        <!--początek div "dołącz do nas"-->
         <div>
           <p class="join-us">DOŁĄCZ DO NAS</p>
           <ul class="social-media-box footer-box">
@@ -490,13 +489,18 @@
             </li>
           </ul>
         </div>
-        <!--KONIEC DIV DOŁĄCZ DO NAS-->
+        <!--koniec div "dołącz do nas"-->
       </div>
-      <!--KONIEC DIV CONTAINER I TWORZĄCY FLEXBOX W STOPCE-->-->
+      <!--koniec div tworzący container i flexbox w stopce-->
     </footer>
-    <div class="modal is-hidden" data-modal>
-      <button data-modal-close>x</button>
+
+    <!--okno modalne-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>&times;</button>
+      </div>
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
