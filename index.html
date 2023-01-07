@@ -63,11 +63,11 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <div>
-            <button class="button-order" type="button" data-modal-open>Zamów usługe</button>
-          </div>
-          <div class="modal is-hidden" data-modal>
-            <button data-modal-close>x</button>
+
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button type="button" class="button-order" data-modal-open>Zamów usługe</button>
+            </div>
           </div>
         </div>
       </section>
@@ -495,6 +495,7 @@
     </footer>
 
     <!--okno modalne-->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>&times;</button>
