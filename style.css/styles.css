@@ -259,7 +259,7 @@ a {
   right: 8px;
   border-radius: 50%;
   background-color: var(--brand-white);
-  border: 1px, solid, var(--close-button-border);
+  border: 1px solid var(--close-button-border);
   cursor: pointer;
 }
 
